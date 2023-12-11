@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokes Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Titan+One&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <div class="joke-title">
+        <h1>Debugging Hilarity</h1>
+        <h4>The only place where puns are not punished but celebrated. Get ready to LOL your way through the randomness!</h4>
+    </div>
+
+    <form class="joke-form" method="get">
+        <input type="submit" value="Programming" id="Programming" formaction="/programming-joke">
+        <input type="submit" value="Pun" id="Pun" formaction="/pun-joke">
+        <input type="submit" value="Dark" id="Dark" formaction="/dark-joke">
+    </form>
+
+    <div class="joke-card">
+            <h4>
+                <%= locals.content %>
+            </h4>
+    </div>
+</body>
+</html>
